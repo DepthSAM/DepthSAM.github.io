@@ -8,6 +8,16 @@ function copyBibTeX() {
     document.body.classList.toggle("dark-mode");
     document.querySelector(".nav").classList.toggle("dark-mode");
   }
+
+  // Image modal functions
+  function openModal(src) {
+    document.getElementById('imageModal').style.display = 'block';
+    document.getElementById('modalImg').src = src;
+  }
+
+  function closeModal() {
+    document.getElementById('imageModal').style.display = 'none';
+  }
   window.onscroll = function () {
     const scrollUpBtn = document.getElementById("scrollUpBtn");
     if (
