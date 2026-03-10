@@ -243,8 +243,14 @@ Extensive experiments show that DepthSAM achieves new SOTA performance on three 
     <!-- 3 Images Carousel -->
     <h3>Image Gallery</h3>
       <div class="carousel-slide">
-        <img src="Assets/Net.png" alt="Slide 1" />
+        <img src="Assets/Net.png" alt="Slide 1" onclick="openModal(this.src)" style="cursor: pointer;" />
       </div>
+
+    <!-- Modal for image preview -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg">
+    </div>
     <!-- <div class="carousel-container" id="imageCarousel">
       <div class="carousel-track">
         <div class="carousel-slide">
