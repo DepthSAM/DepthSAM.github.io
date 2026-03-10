@@ -495,5 +495,13 @@ Extensive experiments show that DepthSAM achieves new SOTA performance on three 
     </div>
 
     <script src="script.js"></script>
+    <script>
+      // Force MathJax to process the page after loading
+      document.addEventListener('DOMContentLoaded', function() {
+        if (window.MathJax) {
+          MathJax.typesetPromise();
+        }
+      });
+    </script>
   </body>
 </html>
